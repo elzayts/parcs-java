@@ -1,0 +1,30 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class Main {
+    public Main() {
+    }
+
+    public static void main(String[] var0) throws FileNotFoundException {
+        Scanner var1 = new Scanner(new File("C:\\code\\parcs-java\\out\\input.txt"));
+        long var2 = (long)var1.nextInt();
+        System.out.println(var2);
+        long var3 = (long)var1.nextInt();
+        System.out.println(var3);
+        long var4 = System.currentTimeMillis();
+        long var5 = var2;
+
+        for(long var6 = var2 + 1L; var6 <= var3; ++var6) {
+            long var7 = findGCD(var6, var5);
+            lcm = var5 * var6 / var7;
+        }
+
+        System.out.println("LCM: " + var5 + " Build finished. Execution time: " + (double)(System.currentTimeMillis() - var4) / 1000.0D + "s");
+        System.out.println();
+    }
+
+    public static long findGCD(long var8, long var9) {
+        return var9 == 0L ? var8 : findGCD(var9, var8 % var9);
+    }
+}

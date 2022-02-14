@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) throws FileNotFoundException {
-        Scanner sc = new Scanner(new File("../out/input.txt")) ;
+        Scanner sc = new Scanner(new File("../out/input")) ;
         long l = sc.nextInt();
         System.out.println(l);
         long r = sc.nextInt();

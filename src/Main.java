@@ -19,7 +19,6 @@ public class Main {
         for(long i=l+1; i<=r; i++){
                 gcd = findGCD(i, lcm);
                 lcm = (lcm*i)/gcd;
-            System.out.println(gcd + lcm);
             }
 
         System.out.println("LCM: "+lcm +" Build finished. Execution time: " + (System.currentTimeMillis() - time)/1000.0 + "s");

@@ -7,7 +7,7 @@ public class Main {
     }
 
     public static void main(String[] var0) throws FileNotFoundException {
-        Scanner var1 = new Scanner(new File("C:\\code\\parcs-java\\out\\input.txt"));
+        Scanner var1 = new Scanner(new File("C:\\code\\parcs-java\\out\\input"));
         long var2 = (long)var1.nextInt();
         System.out.println(var2);
         long var3 = (long)var1.nextInt();

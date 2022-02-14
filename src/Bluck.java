@@ -34,7 +34,7 @@ public class Bluck {
         curtask.end();
     }
     }
- public static long findGCD(long a, long b){
+ private static long findGCD(long a, long b){
     //base condition
     if(b == 0)
       return a;

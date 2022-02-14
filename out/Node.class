@@ -1,0 +1,37 @@
+import java.io.Serializable;
+
+public class Node implements Serializable {
+    private int l;
+    private int r;
+    private int div;
+
+    public Node(int var1, int var2, int var3) {
+        this.l = var1;
+        this.r = var2;
+        this.div = var3;
+    }
+
+    public int getL() {
+        return this.l;
+    }
+
+    public void setL(int var1) {
+        this.l = var1;
+    }
+
+    public int getR() {
+        return this.r;
+    }
+
+    public void setR(int var1) {
+        this.r = var1;
+    }
+
+    public int getDiv() {
+        return this.div;
+    }
+
+    public void setDiv(int var1) {
+        this.div = var1;
+    }
+}
